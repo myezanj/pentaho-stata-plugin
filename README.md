@@ -1,7 +1,7 @@
 # pentaho-stata-plugin
-Pentaho Stata Plug-in Documentation
+## Pentaho Stata Plug-in Documentation
 The Stata Input and Output transformation steps can read and write Stata v12 files, Stata v13, Stata v14, and Stata v15 file formats.
-Stata Input
+### Stata Input
 Reads Stata v15 and earlier .dta files. The meta-data from the file (data, variable and value labels) can optionally be send to a separate target step.
  
 Table 1: Stata Input Options
