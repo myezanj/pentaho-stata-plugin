@@ -2,7 +2,9 @@
 The Stata Input and Output transformation steps can read and write Stata v12 files, Stata v13, Stata v14, and Stata v15 file formats.
 ## Stata Input
 Reads Stata v15 and earlier .dta files. The meta-data from the file (data, variable and value labels) can optionally be send to a separate target step.
-![Screenshot 2020-02-09 at 5 08 54 PM](https://github.com/njabulo-myeza/pentaho-stata-plugin/blob/main/stata_input_example.png)
+
+![stata_input_example](https://github.com/njabulo-myeza/pentaho-stata-plugin/blob/main/stata_input_example.png)
+
 Table 1: Stata Input Options
 Option	Description
 Step Name	Optionally, you can change the name of this step to fit your needs
@@ -26,7 +28,9 @@ The value label name in the case of ‘val’ records
 The value label text in the case of ‘def’ records
 ## Stata Output
 Output data to a Stata v12 (format 115) file. Optionally receives meta data to add variable and value labels to the saved data.
- 
+
+![stata_output_example](https://github.com/njabulo-myeza/pentaho-stata-plugin/blob/main/stata_output_example.png)
+
 Option	Description
 Step Name	Optionally, you can change the name of this step to fit your needs
 File Name	Specifies the location and name of the input Stata file to be read. The file path and/or name can contain variable references of the form ${variablename}, and the value of the variable will be substituted during runtime. Press ctrl-space to get a pop-up list of available variables. Press the ‘Browse’ button to browse the file system and specify an input file name and location.
