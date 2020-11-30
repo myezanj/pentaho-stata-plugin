@@ -12,7 +12,7 @@ Reads Stata v15 and earlier .dta files. The meta-data from the file (data, varia
 | File Name	| Specifies the location and name of the input Stata file to be read. The file path and/or name can contain variable references of the form ***${variablename}***, and the value of the variable will be substituted during runtime. Press ctrl-space to get a pop-up list of available variables. Press the ‘Browse’ button to browse the file system and select an input file. |
 | Send Data To | The target step to which the data records from the input file will be sent. The destination step can be selected from a pop-up list of available steps. |
 | Send Meta Data To | The target step to which the meta data records from the input file will be sent. See Table 2 for the meta data format. This hop is optional.|
-**
+
 ### ***Table 2: Meta data row layout***
 | Field 	| Format 	| Values 	| Description |
 | :------------ |:--------------| :------------ |:------------|
@@ -30,9 +30,12 @@ Output data to a Stata v12 (format 115) file. Optionally receives meta data to a
 
 ![stata_output_example](https://github.com/njabulo-myeza/pentaho-stata-plugin/blob/main/stata_output_example.png)
 
-Option	Description
-Step Name	Optionally, you can change the name of this step to fit your needs
-File Name	Specifies the location and name of the input Stata file to be read. The file path and/or name can contain variable references of the form ${variablename}, and the value of the variable will be substituted during runtime. Press ctrl-space to get a pop-up list of available variables. Press the ‘Browse’ button to browse the file system and specify an input file name and location.
-Get Meta Data From	Input step from which the meta data is read. This input stream must be in the format specified in Table 1 and field names are case-sensitive. All other steps are treated as input data and must have an identical row layout to each other. Providing meta data is optional.
+### ***Table 1: Stata Output Options***
+| **Option**	  | **Description** |
+| :------------ |:----------------|
+| Step Name     | Optionally, you can change the name of this step to fit your needs |
+| File Name     |	Specifies the location and name of the input Stata file to be read. The file path and/or name can contain variable references of the form ${variablename}, and the value of the variable will be substituted during runtime. Press ctrl-space to get a pop-up list of available variables. Press the ‘Browse’ button to browse the file system and specify an input file name and location. |
+| Get Meta Data From | Input step from which the meta data is read. This input stream must be in the format specified in Table 1 and field names are case-sensitive. All other steps are treated as input data and must have an identical row layout to each other. Providing meta data is optional. |
+
 ## Installation
 Copy the stata.jar file to the folder “data-integration\plugins\steps\StataPlugin”. After re-starting Pentaho Kettle, the Stata steps will be listed in the Input and Output folders of the Spoon Design tab.
