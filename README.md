@@ -6,7 +6,8 @@ Reads Stata v15 and earlier .dta files. The meta-data from the file (data, varia
 ![stata_input_example](https://github.com/njabulo-myeza/pentaho-stata-plugin/blob/main/stata_input_example.png)
 
 Table 1: Stata Input Options
-Option	Description
+| **Option**	| **Description**|
+| :------------ |:---------------|
 Step Name	Optionally, you can change the name of this step to fit your needs
 File Name	Specifies the location and name of the input Stata file to be read. The file path and/or name can contain variable references of the form ${variablename}, and the value of the variable will be substituted during runtime. Press ctrl-space to get a pop-up list of available variables. Press the ‘Browse’ button to browse the file system and select an input file.
 Send Data To	The target step to which the data records from the input file will be sent. The destination step can be selected from a pop-up list of available steps.
